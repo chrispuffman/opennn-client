@@ -1,0 +1,34 @@
+{
+  "name": "opennn-client",
+  "version": "1.0.0",
+  "description": "OpenNN (Open Neural Network) Client",
+  "main": "bin/index.js",
+  "scripts": {
+    "build": "./node_modules/.bin/babel src -d bin && browserify browserify/index.js -o bin/OpenNN.js",
+    "postinstall": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PsichiX/opennn-client.git"
+  },
+  "keywords": [
+    "neural",
+    "network",
+    "client",
+    "ai"
+  ],
+  "author": "Patryk 'PsichiX' Budzynski <psichix@gmail.com> (http://psichix.io)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/PsichiX/opennn-client/issues"
+  },
+  "homepage": "https://github.com/PsichiX/opennn-client#readme",
+  "dependencies": {
+    "babel-cli": "latest",
+    "babel-plugin-transform-object-rest-spread": "latest",
+    "babel-polyfill": "latest",
+    "babel-preset-env": "latest",
+    "browserify": "^14.5.0",
+    "uuid": "latest"
+  }
+}
