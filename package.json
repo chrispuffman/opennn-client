@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "OpenNN (Open Neural Network) Client",
   "main": "bin/index.js",
+  "files": [
+    "bin/OpenNN.js"
+  ],
   "scripts": {
     "build": "./node_modules/.bin/babel src -d bin && browserify browserify/index.js -o bin/OpenNN.js",
     "postinstall": "npm run build"
